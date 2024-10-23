@@ -1,0 +1,156 @@
+/*Forms*/
+.well {
+    width: 98%;
+    background-color: #999;
+    border: 1px #666 solid;
+    border-right: #333 2px solid;
+    border-bottom: #333 2px solid;
+    border-radius: 5px;
+    padding: 1%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 9px #555;
+}
+
+.upload_form {
+    width: 100%;
+    height: 270px;
+}
+
+fieldset input {
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 0;
+    border-radius: 5px;
+    border: none;
+    vertical-align: top;
+    box-shadow: 1px 1px 3px;
+}
+
+fieldset input:first-child {
+    width: 60%;
+    padding-left: 4%;
+}
+
+fieldset input:nth-child(2), fieldset input:nth-child(4) {
+    color: #444;
+    background: rgb(232,232,232); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(232,232,232,1) 0%, rgba(178,178,178,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(232,232,232,1) 0%,rgba(178,178,178,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(232,232,232,1) 0%,rgba(178,178,178,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    width: 31%;
+    margin-right: 4%;
+}
+
+fieldset input:nth-child(4) {
+    margin-top: 10px;
+    color: #999;
+}
+
+.browse {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.drop {
+    width: 95%;
+    height: 50px;
+    margin-top: 10px;
+    border: 5px dashed #333;
+    transition: ease 200ms;
+}
+
+.drop:hover {
+    height: 150px;
+    border: 5px dashed green;
+    transition: ease 200ms;
+    cursor: pointer;
+}
+
+.drop:hover p {
+    margin-top: 65px;
+    transition: ease 200ms;
+    color: #fff;
+    font-weight: bold;
+}
+
+.drop p {
+    margin-left: 20%;
+    margin-top: 12px;
+    font-size: 1.2em;
+    color: #333;
+    transition: ease 200ms;
+}
+
+/*Video*/
+.video {
+    width: 49%;
+    height: 100%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+iframe {
+    width: 100%;
+    height: 310px;
+}
+
+.video h3 {
+    margin: 0;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: normal;
+    margin-bottom: 2px;
+
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 1050px) {
+    fieldset input:nth-child(2) {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .browse{
+        display: block;
+        width: 100%;
+    }
+
+    .video {
+        display: block;
+        width: 95%;
+        height: 350px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .video {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .video {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    fieldset input {
+        font-size: 1em;
+    }
+
+    .drop p {
+        margin: 15px;
+    }
+}
